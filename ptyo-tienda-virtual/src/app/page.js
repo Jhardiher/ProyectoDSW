@@ -1,4 +1,4 @@
-
+'use client'
 import styles from "./page.module.css";
 
 import * as React from 'react';
@@ -20,6 +20,14 @@ const Home = () => {
       •
     </Box>
   );
+ 
+  const ScrollArrow = () => {
+    window.scrollBy({
+      top: window.innerHeight,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
 
   return (
     <body>
@@ -51,8 +59,11 @@ const Home = () => {
                   SER
                 </h1>
                 <button className="btn">Conocenos</button>
+
                 <div className="arrow">
-                  <span>&#9660;</span>
+                    <div onClick={ScrollArrow} style={styles.arrow}> <span>&#9660;</span>
+                </div>
+                 
                 </div>
               </div>
               <div className="container2">

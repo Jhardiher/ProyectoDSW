@@ -93,9 +93,10 @@ a {
 }
 
 .arrow {
-  margin-top: 20px;
-  font-size: 24px;
+  margin-top: 50px;
+  font-size: 35px;
   color: #000;
+  cursor: pointer;
 }
 
 .arrow span {
