@@ -5,7 +5,9 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-color: rgb(240, 6, 6);
 }
+
 
 .description {
   display: inherit;
@@ -33,7 +35,11 @@
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
 }
-
+.header{
+  white-space: inherit;
+  margin-top: auto;
+  background-color: darkgrey;
+}
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -64,14 +70,8 @@
   margin-bottom: 0.7rem;
 }
 
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-  text-wrap: balance;
-}
+
+
 
 .center {
   display: flex;
