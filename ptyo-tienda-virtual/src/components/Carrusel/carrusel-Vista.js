@@ -19,8 +19,8 @@ const useStyles = makeStyles(() => ({
     position: "absolute",
     top: "50%",
     transform: "translateY(-50%)",
-    backgroundColor: "rgba(255, 255, 255, 0.5)", // Ajusta el color de fondo según necesites
-    borderRadius: "50%", // Para hacer que el botón sea circular
+    backgroundColor: "rgba(255, 255, 255, 0.5)", 
+    borderRadius: "50%", 
   },
   leftBtn: {
     left: 0,

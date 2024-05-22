@@ -32,7 +32,7 @@ export default function NavBar() {
     return (
 
             <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="static" display='100' style={{ background: 'rgba( 3,3,3 )' }} elevation={0} >
+                <AppBar position="static" display='100' style={{ background: 'rgba( 3,3,3 )'}} elevation={0} >
                     <Toolbar >
                         <Box component={Link} href="/" sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }} >
                             <Image
@@ -44,7 +44,7 @@ export default function NavBar() {
                             />
                             <Typography variant="h6" component="h1" sx={{ ml: 1, display: { xs: 'none', sm: 'block' } }}>
                                 IMC
-                            </Typography>t
+                            </Typography>
                         </Box>
                         <Search />
                         <Box sx={{ ml: 2 }}>
