@@ -1,10 +1,13 @@
 import theme from '../theme';
 import { ThemeProvider } from '@mui/material/styles';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
-import NavBar from "@/components/NavBar";
-import Carrusel from '@/components/Carrusel';
+
+
 
 import "./globals.css";
+import "./page.module.css"
+
+
 
 
 
@@ -23,12 +26,13 @@ export default function RootLayout({ children }) {
       <body>
       <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-              <NavBar />
-              <Carrusel/> 
+         
              {children}
+            
           </ThemeProvider>
       </AppRouterCacheProvider> 
       </body>
+
     </html>
   );
 }

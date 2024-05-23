@@ -11,7 +11,13 @@ import firebase_app from "@/firebase/config";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
+
+import NavBar from '@/components/NavBar';
+import Carrusel from '@/components/Carrusel';
+import PiePag from '@/components/PiePag';
+
 export default function Page() {
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -44,13 +50,18 @@ export default function Page() {
         const auth = getAuth(firebase_app);
         onAuthStateChanged(auth, (user) => {
             if (user) {
-                router.push('/');
+                router.push('/user');
             }
         });
     }, []);
 
     return (
-        <Box sx={{ height: '100vh' }}>
+        <body>  
+            
+        <NavBar/>
+        <Carrusel/>
+       
+        <Box sx={{ height: '800px', margin:'20vh'}}>
             <Paper elevation={3} sx={{ p: 3, maxWidth: 300, mx: 'auto', mt: 5 }}>
                 <Typography variant="h5" sx={{ mb: 2 }}>Iniciar sesión</Typography>
                 {error && <Typography color="error">{error}</Typography>}
@@ -95,6 +106,11 @@ export default function Page() {
                 </Typography>
             </Paper>
         </Box>
+    
+       <PiePag/>
+
+        </body>
+        
     );
 }
 

@@ -1,4 +1,5 @@
 'use client'
+
 import styles from "./page.module.css";
 
 import * as React from 'react';
@@ -10,6 +11,9 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import CardMedia from '@mui/material/CardMedia';
+import Carrusel from "@/components/Carrusel";
+import NavBar from "@/components/NavBar";
+import PiePag from "@/components/PiePag";
 
 const Home = () => {
   const bull = (
@@ -31,6 +35,8 @@ const Home = () => {
 
   return (
     <body>
+    <NavBar/>
+    <Carrusel/>
       <main>
         <Box>
           <div className="left-elements">
@@ -138,17 +144,8 @@ const Home = () => {
           Aquí iría el contenido de la tercera sección
         </section>
       </main>
+     <PiePag/>
 
-      <footer>
-        <div className="containerFooder">
-          <p>Todos los derechos reservados © 2021</p>
-          <ul>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </div>
-      </footer>
     </body>
   );
 }
