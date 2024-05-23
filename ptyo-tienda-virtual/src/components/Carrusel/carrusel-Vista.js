@@ -9,6 +9,8 @@ import { CardSugerencias } from "./cardSugerencias";
 const lista = [
   { id: 0, imgSrc: "https://firebasestorage.googleapis.com/v0/b/prueba-fire-dcce5.appspot.com/o/slayer1.png?alt=media&token=41b11801-dbcd-43b1-8022-4e4df8e7ac9c" },
   { id: 1, imgSrc: "https://firebasestorage.googleapis.com/v0/b/prueba-fire-dcce5.appspot.com/o/slayer2.png?alt=media&token=62b24fdc-7eb1-4b21-8799-463b5d2c69db" },
+  {id: 2, imgSrc: "https://firebasestorage.googleapis.com/v0/b/prueba-fire-dcce5.appspot.com/o/YOUR%20BODY%20(1580%20x%20450%20px).svg?alt=media&token=895c65a9-710e-4c6c-83b0-bdb52201accc" },
+
 ];
 
 const useStyles = makeStyles(() => ({

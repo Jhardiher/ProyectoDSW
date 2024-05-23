@@ -72,38 +72,67 @@ const Home = () => {
             </Box>
           </Container>
         </Box>
+        <Box>
+      <Container className="targetasPrincipal" maxWidth="">
+        <div className="AreaTargetas">
+          <Card sx={{ margin: 2, minWidth: 275, maxWidth: 150 }}>
+            <CardMedia
+              component="img"
+              height="140"
+              image="/comida1.svg"
+              alt=""
+            />
+            <CardContent>
+              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                RECETAS FIT
+              </Typography>
+              <Typography variant="h5" component="div">
+                SANA{bull}ALIMENTACION{bull}
+              </Typography>
+              <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                Mejora tu IMC
+              </Typography>
+              <Typography variant="body2">
+                Siguenos
+                <br />
+                {'"TU SALUD NUESTRA RESPONSABILIDAD"'}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">SABER MAS</Button>
+            </CardActions>
+          </Card>
 
-        <Container>
-          <div>
-            <Card sx={{ margin: 10, marginTop: 30, minWidth: 275, maxWidth: 150 }}>
-              <CardMedia
-                component="img"
-                height="140"
-                image="/comida1.svg"
-                alt=""
-              />
-              <CardContent>
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                  RECETAS FIT
-                </Typography>
-                <Typography variant="h5" component="div">
-                  Sana{bull}Alimentacion{bull}
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  Mejora tu IMC
-                </Typography>
-                <Typography variant="body2">
-                  Siguenos
-                  <br />
-                  {'"TU SALUD NUESTRA RESPONSABILIDAD"'}
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">SABER MAS</Button>
-              </CardActions>
-            </Card>
-          </div>
-        </Container>
+          <Card sx={{ margin: 2, minWidth: 275, maxWidth: 150 }}>
+            <CardMedia
+              component="img"
+              height="140"
+              image="/rutinafit.svg "
+              alt=""
+            />
+            <CardContent>
+              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                RUTINAS FIT
+              </Typography>
+              <Typography variant="h5" component="div">
+                ENTRENA{bull}CUERPO{bull}Y ALMA
+              </Typography>
+              <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                Mejora tu IMC
+              </Typography>
+              <Typography variant="body2">
+                Siguenos
+                <br />
+                {'"TU SALUD NUESTRA RESPONSABILIDAD"'}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">SABER MAS</Button>
+            </CardActions>
+          </Card>
+        </div>
+      </Container>
+    </Box>
 
         <section>
           Aquí iría el contenido de la tercera sección

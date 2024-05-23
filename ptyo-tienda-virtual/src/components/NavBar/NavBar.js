@@ -36,11 +36,11 @@ export default function NavBar() {
                     <Toolbar >
                         <Box component={Link} href="/" sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }} >
                             <Image
-                                src="/principallogo.svg"
-                                alt="IMC"
+                                src="/logoEnblanco.png"
                                 width={50}
                                 height={50}
                                 priority
+                                
                             />
                             <Typography variant="h6" component="h1" sx={{ ml: 1, display: { xs: 'none', sm: 'block' } }}>
                                 IMC

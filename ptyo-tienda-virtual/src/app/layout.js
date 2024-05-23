@@ -9,11 +9,11 @@ import "./globals.css";
 
 
 export const metadata = {
-      title: "Tienda Putumayo",
-      description: "Tienda en linea del departamento del Putumayo en Colombia",
+      title: "IMC Colaboration",
+      description: "",
       manifest: '/manifest.json',
     icons: {
-      apple: 'icon-512x512.png',
+      apple: 'logoEnNegro.png',
     },
 };
 
@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
       <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
               <NavBar />
-             <Carrusel/>  
-              {children}
+              <Carrusel/> 
+             {children}
           </ThemeProvider>
-      </AppRouterCacheProvider>
+      </AppRouterCacheProvider> 
       </body>
     </html>
   );
