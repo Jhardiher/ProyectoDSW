@@ -16,17 +16,17 @@ export default function piePag() {
     <footer class="footer">
       <div class="icon-footer">
 
-        <img src="logoEnblanco.png" width={100} alt="Icono" class="footer-icon"></img>
+        <img src="logoEnblanco.png" width={250} height={250} alt="Icono" class="footer-icon"></img>
 
       </div>
       <div class="containerFooter">
         <div class="text-column">
           <h4>Enlaces Rápidos</h4>
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><Link href="/">Inicio</Link></li>
+            <li><Link href="#sobre-nosotros">Sobre Nosotros</Link></li>
+            <li><Link href="#servicios">Servicios</Link></li>
+            <li><Link href="#contacto">Contacto</Link></li>
           </ul>
         </div>
         <div class="text-column">

@@ -15,6 +15,7 @@ import Carrusel from "@/components/Carrusel";
 import NavBar from "@/components/NavBar";
 import PiePag from "@/components/PiePag";
 
+
 const Home = () => {
   const bull = (
     <Box
@@ -105,7 +106,7 @@ const Home = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">SABER MAS</Button>
+              <Button href="/RFood" size="small"> SABER MAS</Button>
             </CardActions>
           </Card>
 

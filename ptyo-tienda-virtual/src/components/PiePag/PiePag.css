@@ -22,12 +22,12 @@
 .icon-footer {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 
 .footer-icon {
-    width: 50px; /* Adjust the size as needed */
+    width: 500px; /* Adjust the size as needed */
     height: auto;
 }
 
