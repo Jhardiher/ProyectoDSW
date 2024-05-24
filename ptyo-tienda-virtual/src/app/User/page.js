@@ -1,13 +1,10 @@
-'use client'
 
 import * as React from 'react';
-
-
-
 import NavBar from "@/components/NavBar";
 
 
-const UsuarioSesion = () => {
+
+export default function UsuarioSesion(){
 
 
     return(
@@ -23,11 +20,8 @@ const UsuarioSesion = () => {
     )
     
     
-         
-    
-    
-
+  
 
   }
-  export default UsuarioSesion;
+ 
 

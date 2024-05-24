@@ -34,7 +34,7 @@ export default function Page() {
             return;
         }
         // Redirigir a la página de usuario después de iniciar sesión
-        router.push('/user/page.js');
+        router.push('/User');
     };
 
     const handleSignInWithGoogle = async () => {
@@ -44,7 +44,7 @@ export default function Page() {
             return;
         }
         // Redirigir a la página de usuario después de iniciar sesión con Google
-        router.push('/user/page.js');
+        router.push('/User');
     };
 
     useEffect(() => {
@@ -52,7 +52,7 @@ export default function Page() {
         onAuthStateChanged(auth, (user) => {
             if (user) {
                 // Redirigir a la página de usuario si ya está autenticado
-                router.push('/user/page.js');
+                router.push('/User');
             }
         });
     }, [router]);
