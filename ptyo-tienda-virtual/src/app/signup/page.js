@@ -10,6 +10,7 @@ import { signInWithGooglePopup } from "@/firebase/auth/googleAuth";
 import {getAuth, onAuthStateChanged} from "firebase/auth";
 import firebase_app from "@/firebase/config";
 import { useRouter } from "next/navigation";
+import PiePag from '@/components/PiePag/PiePag';
 
 const passwordRequirements = {
     length: (password) => password.length >= 8 && password.length <= 64,
@@ -69,7 +70,10 @@ export default function SignUpPage() {
     }, []);
 
     return (
-        <Box sx={{ height: '100vh' }}>
+
+        <body>
+            <div>  
+            <Box sx={{ height: '100vh', marginBottom: '40vh'}} >
             <Paper elevation={3} sx={{ p: 3, maxWidth: 300, mx: 'auto', mt: 5 }}>
                 <Typography variant="h5" sx={{ mb: 2 }}>Registrarse</Typography>
                 {error && <Typography color="error">{error}</Typography>}
@@ -124,6 +128,14 @@ export default function SignUpPage() {
                     Regístrate con Google
                 </Button>
             </Paper>
-        </Box>
+            
+        </Box> 
+
+            </div>
+           
+        <PiePag/>
+    </body>
+        
+
     );
 }

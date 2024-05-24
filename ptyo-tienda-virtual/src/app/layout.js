@@ -1,15 +1,21 @@
 import theme from '../theme';
 import { ThemeProvider } from '@mui/material/styles';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
-import NavBar from "@/components/NavBar";
 import "./globals.css";
+import "./page.module.css"
+import User  from "@/app/User/page.js"
+import NavBar from '@/components/NavBar';
+
+
+
+
 
 export const metadata = {
-      title: "Tienda Putumayo",
-      description: "Tienda en linea del departamento del Putumayo en Colombia",
+      title: "IMC Colaboration",
+      description: "",
       manifest: '/manifest.json',
     icons: {
-      apple: 'icon-512x512.png',
+      apple: 'logoEnNegro.png',
     },
 };
 
@@ -19,11 +25,14 @@ export default function RootLayout({ children }) {
       <body>
       <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-              <NavBar />
-              {children}
+         
+             {children}
+            
           </ThemeProvider>
-      </AppRouterCacheProvider>
+      </AppRouterCacheProvider> 
       </body>
+
     </html>
   );
 }
+
