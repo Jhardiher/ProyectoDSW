@@ -1,12 +1,10 @@
 import theme from '../theme';
 import { ThemeProvider } from '@mui/material/styles';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
-import User from '@/app/User/page'
-
-
-
 import "./globals.css";
 import "./page.module.css"
+import User  from "@/app/User/page.js"
+import NavBar from '@/components/NavBar';
 
 
 
@@ -27,7 +25,8 @@ export default function RootLayout({ children }) {
       <body>
       <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-            <User/>
+          <NavBar/>
+        
              {children}
             
           </ThemeProvider>
