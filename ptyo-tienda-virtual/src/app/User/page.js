@@ -1,13 +1,31 @@
 'use client'
+import * as React from 'react';
 
 
-import { notFound } from "next/navigation";
+
+import NavBar from "@/components/NavBar";
 
 
-export default function User(){
-    return<p>hola area del usuario</p>
+const UsuarioSesion = () => {
+
+
+    return(
+      
+    <body>
+      <NavBar/>
+      <p>hola area del usuario</p>
+      
+         
+      
+  
+      </body>
+    )
+    
+    
+         
     
     
 
 
   }
+  export default UsuarioSesion;
