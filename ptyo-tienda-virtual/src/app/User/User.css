@@ -1,0 +1,13 @@
+.ContenedorPrincipal{
+    display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples filas si es necesario */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 10px; /* Espacio entre las tarjetas */
+  padding-left: inherit;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background-image: linear-gradient(180deg, #4b2e2d 0, #3d2627 12.5%, #2d1d1f 25%, #1b1314 37.5%, #000000 50%, #000000 62.5%, #000000 75%, #000000 87.5%, #000000 100%);
+}
