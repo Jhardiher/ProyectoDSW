@@ -4,7 +4,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import "./globals.css";
 import "./page.module.css"
 import User  from "@/app/User/page.js"
-import NavBar from '@/components/NavBar';
+
 
 
 
