@@ -1,4 +1,10 @@
-.ContenedorPrincipal{
+
+body{
+  background-color: white;
+}
+
+
+.targetasPrincipal{
     display: flex;
   flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples filas si es necesario */
   justify-content: center; /* Centra los elementos horizontalmente */
@@ -10,4 +16,20 @@
   margin-bottom: 10px;
   border-radius: 15px;
   background-image: linear-gradient(180deg, #4b2e2d 0, #3d2627 12.5%, #2d1d1f 25%, #1b1314 37.5%, #000000 50%, #000000 62.5%, #000000 75%, #000000 87.5%, #000000 100%);
+}
+.ContenedorUser{
+
+margin-left: 0%;
+margin-right: 0%;
+background-color: #b1babb;
+margin-bottom: 50px;
+padding: 50px;
+
+}
+
+
+.usuario{
+  margin: 0%;
+   
+   background-image:#b1babb
 }

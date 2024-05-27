@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import CardMedia from '@mui/material/CardMedia';
 import NavBar from "@/components/NavBar";
 import PiePag from "@/components/PiePag";
+import '@/app/User/User.css'
 
 
 
@@ -22,9 +23,24 @@ export default function UsuarioSesion() {
     <body>
     <NavBar/>
    
-      <main>
+      <main>  
+        <Container className='ContenedorUser' maxWidth="xs">
+          <Box> 
+            <div className='Usuario'>
+              <p> Hola </p>
+
+            </div>
+          </Box>
+        </Container>
+
+
+
+
+
+
+
         <Box>
-      <Container className="targetasPrincipal" maxWidth="">
+      <Container className="targetasPrincipal" >
         <div className="AreaTargetas">
           <Card sx={{ margin: 2, minWidth: 275, maxWidth: 150 }}>
             <CardMedia
