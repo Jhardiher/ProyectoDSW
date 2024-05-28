@@ -13,8 +13,7 @@ import firebase_app from "@/firebase/config";
 import { Button } from "@mui/material";
 
 import app from "@/app/page.js"
-
-
+import React from 'react';
 
 
 
@@ -30,53 +29,64 @@ export default function NavBar() {
         });
     }, []);
 
+    const auth = getAuth(firebase_app);
+
     return (
- 
 
-    <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="static" display='100' style={{ background: 'rgba( 3,3,3 )'}} elevation={0} >
-                    <Toolbar >
-                        <Box component={Link} href="/" sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }} >
-                            <Image
-                                src="/logoEnblanco.png"
-                                width={50}
-                                height={50}
-                                priority
-                                
-                            />
-                            <Typography variant="h6" component="h1" sx={{ ml: 1, display: { xs: 'none', sm: 'block' } }}>
-                                IMC
+
+        <Box sx={{ flexGrow: 1 }}>
+            <AppBar position="static" display='100' style={{ background: 'rgba( 3,3,3 )' }} elevation={0} >
+                <Toolbar >
+                    <Box component={Link} href="/" sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }} >
+                        <Image
+                            src="/logoEnblanco.png"
+                            width={50}
+                            height={50}
+                            priority
+
+                        />
+                        <Typography variant="h6" component="h1" sx={{ ml: 1, display: { xs: 'none', sm: 'block' } }}>
+                            IMC
+                        </Typography>
+                    </Box>
+                    <Search />
+                    <Box sx={{ ml: 2 }}>
+            {user ? (
+                <React.Fragment>
+                    <Link href="#" onClick={() => signOut(auth)}>
+                        <Typography color="inherit">
+                            Cerrar sesión
+                        </Typography>
+                    </Link>
+                    {window.location.pathname !== '/User' && (
+                        <Link href="/User">
+                            <Typography >
+                                Perfil
                             </Typography>
-                        </Box>
-                        <Search />
+                        </Link>
+                    )}
+                    {window.location.pathname === '/profile' && (
+                        <Link href="/">
+                            <Typography >
+                                Inicio
+                            </Typography>
+                        </Link>
+                    )}
+                </React.Fragment>
+            ) : (
+                <Link href="/signin">
+                    <Typography color="inherit">
+                        Iniciar sesión
+                    </Typography>
+                </Link>
+            )}
+        </Box>
+                </Toolbar>
+            </AppBar>
+        </Box>
 
-                        <Box sx={{ ml: 2 }}>
-                            {user ? (
-                                <Link href="#" onClick={() => {
-                                    const auth = getAuth(firebase_app);
-                                    signOut(auth);
-                                }}>
-                                    <Link href="/">
-                                    <Typography color>
-                                        Cerrar sesión
-                                    </Typography>
-                                    </Link>
-                                    
-                                </Link>
-                            ) : (
-                                <Link href="/signin">
-                                    <Typography>
-                                        Iniciar sesión
-                                    </Typography>
-                                </Link>
-                            )}
-                        </Box>
-                    </Toolbar>
-                </AppBar>
-            </Box>
-     
 
- 
-           
+
+
     )
 }
