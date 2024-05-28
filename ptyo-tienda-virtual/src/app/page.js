@@ -49,8 +49,10 @@ const Home = () => {
         
         <Box>
           <Container>
-            <Box component="section" sx={{ p: 3 }}>
+            <Box  component="section" sx={{ p: 3 }}>
+
               <div className="container">
+                
                 <p className="intro-text">
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
@@ -73,9 +75,7 @@ const Home = () => {
                  
                 </div>
               </div>
-              <div className="container2">
-               
-              </div>
+           
             </Box>
           </Container>
         </Box>
