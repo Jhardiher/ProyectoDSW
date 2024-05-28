@@ -1,7 +1,5 @@
 
-body{
-  background-color: white;
-}
+
 
 
 .targetasPrincipal{
@@ -25,11 +23,38 @@ background-color: #b1babb;
 margin-bottom: 50px;
 padding: 50px;
 
+
 }
 
 
 .usuario{
   margin: 0%;
+  padding: auto;
    
    background-image:#b1babb
+}
+
+.container1{
+  display: flex;
+}
+.sidebar {
+
+  width: 200px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 25px;
+  margin-top: 200px;
+}
+.sidebar i{
+  display: block;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  margin: 5px 0;
+}
+.main-content {
+  flex: 1;
+  padding: 20px;
 }
