@@ -29,7 +29,6 @@ export default function NavBar() {
         onAuthStateChanged(auth, (user) => {
             setUser(user)
         });
-        
      
     }, []);
 
@@ -57,6 +56,7 @@ export default function NavBar() {
             {user ? (
                 <React.Fragment>
                     <Link href="/" onClick={() => signOut(auth)}>
+
                         <Typography color="inherit">
                             Cerrar sesión
                         </Typography>
