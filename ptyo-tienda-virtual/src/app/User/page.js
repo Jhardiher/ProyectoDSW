@@ -42,18 +42,18 @@ export default function UsuarioSesion() {
       <main>
 
         <Box display='flex'>
-          <div class="container1">
-            <div class="sidebar">
-              <Link href="/"><i class="home"></i> Inicio</Link>
-              <Link href="#"><i class="fas fa-list"></i>progreso</Link>
-              <Link href="#"><i class="fas fa-credit-card"></i>recomendaciones</Link>
-              <Link href="#"><i class="fas fa-cogs"></i> Gestionar</Link>
+          <div className="container1">
+            <div className="sidebar">
+              <Link href="/"><i className="home"></i> Inicio</Link>
+              <Link href="#"><i className="fas fa-list"></i>progreso</Link>
+              <Link href="#"><i className="fas fa-credit-card"></i>recomendaciones</Link>
+              <Link href="#"><i className="fas fa-cogs"></i> Gestionar</Link>
 
             </div>
           </div>
 
-          <div className=' contenainer2'>   
-             <div className=' AreaImc' >
+          <div classNameName=' contenainer2'>   
+             <div classNameName=' AreaImc' >
             <h2>calcula  tu IMC</h2>
             <form onSubmit={handleSubmit}>
               <div>
@@ -90,8 +90,8 @@ export default function UsuarioSesion() {
 
         </Box>
         <Box>
-          <Container className="targetasPrincipal" >
-            <div className="AreaTargetas">
+          <Container classNameName="targetasPrincipal" >
+            <div classNameName="AreaTargetas">
               <Card sx={{ margin: 2, minWidth: 275, maxWidth: 150 }}>
                 <CardMedia
                   component="img"

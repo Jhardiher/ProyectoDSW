@@ -13,14 +13,14 @@ export default function piePag() {
   return (
 
 
-    <footer class="footer">
-      <div class="icon-footer">
+    <footer className="footer">
+      <div className="icon-footer">
 
-        <img src="logoEnblanco.png" width={250} height={250} alt="Icono" class="footer-icon"></img>
+        <img src="logoEnblanco.png" width={250} height={250} alt="Icono" className="footer-icon"></img>
 
       </div>
-      <div class="containerFooter">
-        <div class="text-column">
+      <div className="containerFooter">
+        <div className="text-column">
           <h4>Enlaces Rápidos</h4>
           <ul>
             <li><Link href="/">Inicio</Link></li>
@@ -29,13 +29,13 @@ export default function piePag() {
             <li><Link href="#contacto">Contacto</Link></li>
           </ul>
         </div>
-        <div class="text-column">
+        <div className="text-column">
           <h4>Contacto</h4>
           <p>Dirección: vereda San Antoni, Mocoa, Putumayo</p>
           <p>Teléfono: (+57) 323 2310 187</p>
           <p>Email: imcColaboration@gmail.com</p>
         </div>
-        <div class="text-column">
+        <div className="text-column">
           <h4>Síguenos</h4>
           <p>
             <img src='facebook.png' height={25} width={25} ></img> <a href="https://www.facebook.com" target="_blank"> Facebook</a>
