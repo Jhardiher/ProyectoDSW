@@ -1,4 +1,4 @@
-
+'use client'
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -13,11 +13,26 @@ import PiePag from "@/components/PiePag";
 import '@/app/User/User.css'
 import Link from 'next/link';
 
+import { useState } from 'react';
+
+
 
 
 
 export default function UsuarioSesion() {
 
+  const [height, setHeight] = useState('');
+  const [weight, setWeight] = useState('');
+  const [imc, setIMC] = useState(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (height && weight) {
+      const heightInMeters = height / 100;
+      const imcValue = (weight / (heightInMeters * heightInMeters)).toFixed(2);
+      setIMC(imcValue);
+    }
+  };
 
   return (
 
@@ -25,27 +40,55 @@ export default function UsuarioSesion() {
       <NavBar />
 
       <main>
-      
-          <Box>
-            <div class="container1">
-              <div class="sidebar">
-                <Link href="/"><i class="home"></i> Inicio</Link>
-                <Link href="#"><i class="fas fa-list"></i>historial</Link>
-                <Link href="#"><i class="fas fa-credit-card"></i>recomendaciones</Link>
-                <Link href="#"><i class="fas fa-cogs"></i> Gestionar</Link>
 
-              </div>
+        <Box display='flex'>
+          <div class="container1">
+            <div class="sidebar">
+              <Link href="/"><i class="home"></i> Inicio</Link>
+              <Link href="#"><i class="fas fa-list"></i>progreso</Link>
+              <Link href="#"><i class="fas fa-credit-card"></i>recomendaciones</Link>
+              <Link href="#"><i class="fas fa-cogs"></i> Gestionar</Link>
+
             </div>
+          </div>
 
-          </Box>
-    
+          <div className=' contenainer2'>   
+             <div className=' AreaImc' >
+            <h2>calcula  tu IMC</h2>
+            <form onSubmit={handleSubmit}>
+              <div>
+                <label>
+                  Altura (cm):
+                  <input
+                    type="number"
+                    value={height}
+                    onChange={(e) => setHeight(e.target.value)}
+                    required
+                  />
+                </label>
+              </div>
+              <div>
+                <label>
+                  Peso (kg):
+                  <input
+                    type="number"
+                    value={weight}
+                    onChange={(e) => setWeight(e.target.value)}
+                    required
+                  />
+                </label>
+              </div>
+              <button type="submit">Calcular IMC</button>
+            </form>
+            {imc && (
+              <div>
+                <h3>Tu IMC es: {imc}</h3>
+              </div>
+            )}
+          </div>
+          </div>
 
-
-
-
-
-
-
+        </Box>
         <Box>
           <Container className="targetasPrincipal" >
             <div className="AreaTargetas">
