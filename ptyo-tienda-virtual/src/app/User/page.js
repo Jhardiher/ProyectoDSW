@@ -32,6 +32,18 @@ export default function UsuarioSesion() {
       const imcValue = (weight / (heightInMeters * heightInMeters)).toFixed(2);
       setIMC(imcValue);
     }
+
+    let msg = '';
+    if (imcValue < 18.5) {
+      msg = 'Estás por debajo del peso ideal (bajo peso).';
+    } else if (imcValue >= 18.5 && imcValue < 24.9) {
+      msg = 'Tienes un peso saludable.';
+    } else if (imcValue >= 25 && imcValue < 29.9) {
+      msg = 'Estás en sobrepeso.';
+    } else {
+      msg = 'Tienes obesidad.';
+    }
+    setMessage(msg);
   };
 
   return (
@@ -83,6 +95,7 @@ export default function UsuarioSesion() {
             {imc && (
               <div>
                 <h3>Tu IMC es: {imc}</h3>
+                <h4>{message}</h4>
               </div>
             )}
           </div>
