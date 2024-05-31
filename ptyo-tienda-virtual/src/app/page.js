@@ -54,7 +54,7 @@ const Home = () => {
               <div className="container">
                 
                 <p className="intro-text">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
                 </p>
                 <h1 className="main-title">
@@ -102,7 +102,7 @@ const Home = () => {
               <Typography variant="body2">
                 Siguenos
                 <br />
-                {'"TU SALUD NUESTRA RESPONSABILIDAD"'}
+                TU SALUD NUESTRA RESPONSABILIDAD
               </Typography>
             </CardContent>
             <CardActions>
@@ -114,7 +114,7 @@ const Home = () => {
             <CardMedia
               component="img"
               height="140"
-              image="/rutinafit.svg "
+              image="/rutinafit.svg"
               alt=""
             />
             <CardContent>
@@ -130,7 +130,7 @@ const Home = () => {
               <Typography variant="body2">
                 Siguenos
                 <br />
-                {'"TU SALUD NUESTRA RESPONSABILIDAD"'}
+                TU SALUD NUESTRA RESPONSABILIDAD
               </Typography>
             </CardContent>
             <CardActions>

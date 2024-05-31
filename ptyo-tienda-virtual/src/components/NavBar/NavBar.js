@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,9 +11,11 @@ import { useEffect, useState } from "react";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import firebase_app from "@/firebase/config";
 import { Button } from "@mui/material";
-
+import React from "react";
 import app from "@/app/page.js"
-import React from 'react';
+import Router from "next/router";
+
+
 
 
 
@@ -23,13 +25,13 @@ export default function NavBar() {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
-        const auth = getAuth(firebase_app);
+         const auth = getAuth(firebase_app);
         onAuthStateChanged(auth, (user) => {
             setUser(user)
         });
+     
     }, []);
 
-    const auth = getAuth(firebase_app);
 
     return (
 
@@ -53,23 +55,24 @@ export default function NavBar() {
                     <Box sx={{ ml: 2 }}>
             {user ? (
                 <React.Fragment>
-                    <Link href="#" onClick={() => signOut(auth)}>
+                    <Link href="/" onClick={() => signOut(auth)}>
+
                         <Typography color="inherit">
                             Cerrar sesión
                         </Typography>
                     </Link>
                     {window.location.pathname !== '/User' && (
                         <Link href="/User">
-                            <Typography >
+                            <Button variant="contained" >
                                 Perfil
-                            </Typography>
+                            </Button>
                         </Link>
                     )}
-                    {window.location.pathname === '/profile' && (
+                    {window.location.pathname === '/User' && (
                         <Link href="/">
-                            <Typography >
+                            <Button variant="contained" >
                                 Inicio
-                            </Typography>
+                            </Button>
                         </Link>
                     )}
                 </React.Fragment>
